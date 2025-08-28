@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capítulos - Friends</title>
+    <link rel="stylesheet" href="css/estiloprincipal.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: white;
+        }
+        header {
+            background-color: #000;
+            padding: 2px;          
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; 
+            justify-content: center;
+            gap: 30px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #FFD700;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #FF4500; 
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-family: 'Comic Sans MS', cursive;
+            color: #FF4500;
+            margin: 50px;
+            text-align: center;
+        }
+        main {
+            padding: 30px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .portada {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .portada img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        main ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        main ul li { margin: 8px 0; }
+        main ul li a {
+            text-decoration: none;
+            color: #FFD700;
+            transition: color 0.3s, text-decoration 0.3s;
+        }
+        main ul li a:hover { color: #FF4500; text-decoration: underline; }
+
+        h2 {
+            color: #FFD700;
+            margin-top: 30px;
+            scroll-margin-top: 90px; /* al hacer click en el índice no queda tapado por el header */
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #E0E0E0;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #FF4500;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .btn:hover { background-color: #FFD700; color: #000; }
+
+        footer {
+            background-color: #FFD700;
+            color: black;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="capitulos.html">Capítulos</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+            </ul>
+        </nav>
+        <h1>Capítulos y Temporadas</h1>
+    </header>
+
+    <main>
+        <!-- Portada -->
+        <div class="portada">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/d6/Friends_season_one_cast.jpg" alt="Portada Friends">
+        </div>
+
+        <!-- Índice -->
+        <ul>
+            <li><a href="#temp1">Temporada 1</a></li>
+            <li><a href="#temp2">Temporada 2</a></li>
+            <li><a href="#temp3">Temporada 3</a></li>
+            <li><a href="#temp4">Temporada 4</a></li>
+            <li><a href="#temp5">Temporada 5</a></li>
+            <li><a href="#temp6">Temporada 6</a></li>
+            <li><a href="#temp7">Temporada 7</a></li>
+            <li><a href="#temp8">Temporada 8</a></li>
+            <li><a href="#temp9">Temporada 9</a></li>
+            <li><a href="#temp10">Temporada 10</a></li>
+        </ul>
+
+        <!-- Temporadas 1 a 10 -->
+        <h2 id="temp1">Temporada 1</h2>
+        <p>Se estrenó en 1994 y nos presenta a los seis amigos en Nueva York. Central Perk se convierte en su lugar de encuentro.</p>
+        <a class="btn" href="https://es.wikipedia.org/wiki/Friends_(season_1)" target="_blank" rel="noopener">Ver más</a>
+
+        <h2 id="temp2">Temporada 2</h2>
+        <p>Las relaciones se vuelven más intensas, especialmente entre Ross y Rachel.</p>
+        <a class="btn" href="https://es.wikipedia.org/wiki/Friends_(season_2)" target="_blank" rel="noopener">Ver más</a>
+
+        <h2 id="temp3">Temporada 3</h2>
+        <p>La relación Ross y Rachel enfrenta dificultades y aparecen nuevos conflictos.</p>
+        <a class="btn" href="https://es.wikipedia.org/wiki/Friends_(season_3)" target="_blank" rel="noopener">Ver más</a>
+
+        <h2 id="temp4">Temporada 4</h2>
+        <p>Incluye bodas, viajes y giros inesperados que marcan la historia.</p>
+        <a class="btn" href="https://es.wikipedia.org/wiki/Friends_(season_4)" target="_blank" rel="noopener">Ver más</a>
+
+        <h2 id="temp5">Temporada 5</h2>
+        <p>Se desarrolla la relación entre Monica y Chandler, que se vuelve fundamental.</p>
+        <a class="btn" href="https://es.wikipedia.org/wiki/Friends_(season_5)" target="_blank" rel="noopener">Ver más</a>
+
+        <h2 id="temp6">Temporada 6</h2>
+        <p>Los personajes enfrentan cambios importantes en sus vidas personales y laborales.</p>
+        <a class="btn" href="https://es.wikipedia.org/wiki/Friends_(season_6)" target="_blank" rel="noopener">Ver más</a>
+
+        <h2 id="temp7">Temporada 7</h2>
+        <p>La boda de Monica y Chandler es el evento central de esta temporada.</p>
+        <a class="btn" href="https://es.wikipedia.org/wiki/Friends_(season_7)" target="_blank" rel="noopener">Ver más</a>
+
+        <h2 id="temp8">Temporada 8</h2>
+        <p>Rachel enfrenta el reto de la maternidad, mientras la amistad sigue siendo clave.</p>
+        <a class="btn" href="https://es.wikipedia.org/wiki/Friends_(season_8)" target="_blank" rel="noopener">Ver más</a>
+
+        <h2 id="temp9">Temporada 9</h2>
+        <p>Los personajes toman decisiones importantes para su futuro.</p>
+        <a class="btn" href="https://es.wikipedia.org/wiki/Friends_(season_9)" target="_blank" rel="noopener">Ver más</a>
+
+        <h2 id="temp10">Temporada 10</h2>
+        <p>La última temporada cierra con la despedida en el icónico apartamento de Monica.</p>
+        <a class="btn" href="https://es.wikipedia.org/wiki/Friends_(season_10)" target="_blank" rel="noopener">Ver más</a>
+    </main>
+
+    <footer>
+        <p>Derechos reservados © 2025</p>
+    </footer>
+</body>
+</html>

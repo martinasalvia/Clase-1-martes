@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes - Friends</title>
+    <link rel="stylesheet" href="css/estiloprincipal.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: white;
+        }
+        header {
+            background-color: #000;
+            padding: 2px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #FFD700;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #FF4500;
+            text-decoration: underline;
+        }
+        h1 {
+            font-family: 'Comic Sans MS', cursive;
+            color: #FF4500;
+            margin: 50px;
+            display: flex; 
+            justify-content: center;
+        }
+        main {
+            padding: 30px;
+            text-align: center;
+        }
+        .personajes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .card {
+            background-color: #2c2c2c;
+            border-radius: 15px;
+            padding: 15px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .card h2 {
+            margin: 10px 0;
+            color: #FFD700;
+        }
+        .card p {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #F5F5F5;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #FF4500;
+            color: white;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #FFD700;
+            color: black;
+        }
+        footer {
+            background-color: #FFD700;
+            color: black;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="capitulos.html">Capítulos</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+            </ul>
+        </nav>
+        <h1>Personajes Principales</h1>
+    </header>
+    <main>
+        <div class="personajes">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/6f/David_Schwimmer_as_Ross_Geller.jpg" alt="Ross Geller">
+                <h2>Ross Geller</h2>
+                <p>Paleontólogo, hermano de Monica. Inteligente y algo torpe, su relación con Rachel es central en la historia.</p>
+                <a href="https://es.wikipedia.org/wiki/Ross_Geller" target="_blank" class="btn">Ver más</a>
+            </div>
+            <div class="card">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/JenniferAnistonFeb09.jpg?width=300" alt="Rachel Green" alt="Rachel Green">
+                <h2>Rachel Green</h2>
+                <p>De camarera en Central Perk a trabajar en moda. Su relación con Ross es una de las más recordadas.</p>
+                <a href="https://es.wikipedia.org/wiki/Rachel_Green" target="_blank" class="btn">Ver más</a>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/d/d0/Courteney_Cox_as_Monica_Geller.jpg" alt="Monica Geller">
+                <h2>Monica Geller</h2>
+                <p>Chef perfeccionista y amante del orden. Es la hermana de Ross y anfitriona del grupo.</p>
+                <a href="https://es.wikipedia.org/wiki/Monica_Geller" target="_blank" class="btn">Ver más</a>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/6/66/Matthew_Perry_as_Chandler_Bing.png" alt="Chandler Bing">
+                <h2>Chandler Bing</h2>
+                <p>Conocido por su sarcasmo y humor, trabaja en análisis de datos y es inseparable de Joey.</p>
+                <a href="https://es.wikipedia.org/wiki/Chandler_Bing" target="_blank" class="btn">Ver más</a>
+            </div>
+            <div class="card">
+                <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Matt_LeBlanc_2010.jpg?width=300" alt="Joey Tribbiani" alt="Joey Tribbiani">
+                <h2>Joey Tribbiani</h2>
+                <p>Actor en busca de fama, ingenuo pero encantador. Su frase icónica es: "How you doin'?"</p>
+                <a href="https://es.wikipedia.org/wiki/Joey_Tribbiani" target="_blank" class="btn">Ver más</a>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/f/f6/Friendsphoebe.jpg" alt="Phoebe Buffay">
+                <h2>Phoebe Buffay</h2>
+                <p>Excéntrica y divertida, toca la guitarra en Central Perk. Sus canciones y personalidad son únicas.</p>
+                <a href="https://es.wikipedia.org/wiki/Phoebe_Buffay" target="_blank" class="btn">Ver más</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Derechos reservados © 2025</p>
+    </footer>
+</body>
+</html>
